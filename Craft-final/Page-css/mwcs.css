@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* font-family: 'Ubuntu', sans-serif; */
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body { font-size: 13px; background:linear-gradient(35deg,lightgreen, lightblue, indianred)no-repeat; }
+
+
+
+/* ######################______ N A V - B A R  */
+.wrapper .navbar {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    position: fixed;
+    padding: 0px 1px;
+    top: 0px;
+    z-index: 9999;
+}
+.wrapper .navbar .logo {
+    width: 10px;
+    height: 100%;
+    /* background: #3421C0; */
+    /* border-bottom: 1px solid #22119d; */
+}
+.wrapper .navbar .logo a {
+    display: block;
+    text-align: center;
+    /* font-family: 'Montserrat Subrayada', sans-serif; */
+    /* font-size: 20px; */
+    /* color: azure; */
+    padding: 1px 0;
+}
+.wrapper .navbar .nav-menu {
+    display: flex;
+    /* auto gap between social and search */
+    justify-content: space-between;
+    height: 100%;
+    width: calc(100% - 50px);
+    padding: 0 20px;
+    background: #556;
+    align-items: center;
+}
+.wrapper .navbar .nav-menu .home_link a {
+    display: block;
+    color: #fff;
+    padding: 8px 15px;
+    background: #3421C0;
+    border-radius: 4px;
+}
+.wrapper .nav-menu .right-info .icon-wrap {
+    display: inline-block;
+}
+.wrapper .nav-menu .right-info .icon-wrap .icon {
+    /* position: relative; */
+}
+.wrapper .nav-menu .right-info .icon-wrap .icon a {
+    display: block;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 27px;
+    border: 3px solid #fff;
+    text-align: center;
+    border-radius: 50px;
+    color: #22119d;
+    background-color: aqua;
+}
+.wrapper .nav-menu .right-info .icon-wrap .icon a:hover {
+    background-color: rgb(226, 248, 28);
+    color: green;
+}
+/* ######################______ N A V - B A R  END'S*/
+
+
+
+
+
+/* __________________S O C I A L BUTTON'S START'S__________________ */
+.social-nav {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 5px auto;
+}
+.social-nav li {
+    display: inline-block;
+}
+.model-7 li {
+    margin: 0 10px;
+}
+.model-7 a {
+    background: none;
+    box-shadow: 0 0 4px 3px;
+    text-shadow: 0 0 1px #333;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+.model-7 a.s1:hover {
+    background: #1606a3;
+    color: #ddd;
+}
+.model-7 a.s2:hover {
+    background: #4dc247;
+    color: #ddd;
+}
+.model-7 a.s3:hover {
+    background: #06d3ee;
+    color: #ddd;
+}
+.model-7 a.s4:hover {
+    background: #CB2026;
+    color: #ddd;
+}
+.model-7 a.s5:hover {
+    background: #e9ec0f;
+    color: #ddd;
+}
+.model-7 a.s6:hover {
+    background: #55b;
+    color: #ddd;
+}
+.model-7 .universal {
+    color: #111;
+}
+.social-nav a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    /* icon position within circle */
+    line-height: 38px;
+    position: relative;
+}
+/* __________________S O C I A L BUTTON'S  END'S__________________ */
+
+
+
+
+
+/* __________________S M A L L S I D E B A R START'S__________________ */
+
+.main-body .sidebar {
+    /* size of side bar flap */
+    width: 50px;
+    /* height of sidebar */
+    height: 100%;
+    /* sidebar fixed to page */
+    position: fixed;
+    top: 55px;
+    left: 1px;
+    /* sidebar flap color */
+    background: #251a1a;
+    /* slow collapsing and opening effect of flap */
+    transition: all 0.3s linear;
+}
+.main-body .sidebar .sidebar-menu {
+    position: relative;
+    /* gap b/w sidebar top & sidebar icon  */       
+    padding: 48PX 10px;
+}
+.main-body .sidebar ul li a {
+    /* size & font of sidebar icons */
+    font-size: 15px;
+    
+    display: block;
+    white-space: nowrap;
+    /* positioning of icons from borders of sidebar */
+    padding: 10px 5px;
+    color: aqua;
+}
+/* Hiding the icon text while small sidebar */
+.main-body .sidebar ul li a span.list {
+    display: none;
+}
+/* __________________S M A L L S I D E B A R END'S__________________ */
+
+
+
+
+
+/* __________________S I D E B A R  HOVER START'S__________________ */
+.main-body .sidebar ul li a:hover {
+    text-decoration: none;
+    background: #e9ec0f;
+    color: #111;
+}
+.main-body .sidebar ul li a .icon {
+    /* Distance between icon and text */
+    margin-right: 15px;
+}
+.main-body .sidebar ul li a.active {
+    background: lightslategray;
+    color: #fff;
+}
+/* __________________S I D E B A R  HOVER START'S__________________ */
+
+
+
+
+
+/* __________________T O G G L E  -  B U T T O N  START'S__________________ */
+
+/* POSITIONING-----Toggler outer circle(white) Adjustement */
+.main-body .sidebar .toggler {
+    position: absolute;
+    /* Distance from the TOP of sidebar */
+    top: 2px;
+    /* Adjusting white-bg width of toggle button left right position on page */
+    right: -23px;
+    /* white-bg width of toggler  */
+    width: 45px;
+    /* white-bg height of toggler */
+    height: 45px;
+    background: #111;
+    /* adjust curves at edges */
+    border-radius: 50%;
+    /* change the errow cursor to fingure point */
+    cursor: pointer;
+
+}
+/* POSITIONING */
+.main-body .sidebar .tog-icon,
+.main-body .sidebar .toggler .arrow {
+    position: absolute;
+    /* toggler-arrow distance from top of sidebar */
+    top: 50%;
+    /* toggler-arrow distance from left of sidebar */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* POSITIONING-------Toggler inner circle(Blue) Adjustement */
+.main-body .sidebar .tog-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(34deg, green, white, orange);
+    border-radius: 50%;
+}
+/* Toggler icon beautification */
+.main-body .sidebar .toggler .arrow {
+    color: #1606a3;
+    /* toggle icon size */
+    font-size: 15px;
+}
+/* Default display toggle icon */
+.main-body .sidebar .toggler .fa-hand-point-left {
+    display: none;
+}
+/* __________________T O G G L E  -  B U T T O N  END'S__________________ */
+
+
+
+
+
+/* __________________Main page collapsing, text-shrinking, __________________ */
+/* collapsing the flap */
+.wrapper.active .sidebar {
+    width: 155px;
+}
+/* Displaying the right toggler icon on collapsed*/
+.wrapper.active .toggler .fa-hand-point-left {
+    display: block;
+}
+/* Hide the left toggler button when collaopse */
+.wrapper.active .toggler .fa-hand-point-right {
+    display: none;
+}
+/* Hide Text of the icon when collapsed */
+.wrapper.active .sidebar ul li a .list {
+    display: inline-block;
+}
+/* __________________Main page collapsing, text-shrinking, __________________ */
+
+
+
+
+
+/* __________________M A I N   -  B O D Y  START'S__________________ */
+
+.wrapper.active .main-body .main-content {
+    width: calc(100% - 150px);/*W AdSjudting text according to available space */
+    margin-left: 150px;/*OPEN SLIDE MOVES THE MAIN TEXT TO THE RIGHT*/
+    
+}
+.main-body .main-content {
+    /*main screen responsive */
+    width: calc(100% - 80px);
+    /*distance b/w text and sidebar */
+    margin-left: 50px;
+    /*Fixed Distance from top of page */
+    margin-top: 60px;
+    transition: all 0.3s linear;
+    /*Adjusting distance from top and left */
+    padding: 30px 25px;
+}
+.main-body .main-content .item-wrap {
+    display: block;
+    margin: 5px;
+    margin-bottom: 42px;
+}
+.main-content .item-wrap .item {
+    margin: 5px;
+}
+/* __________________M A I N   -  B O D Y  ENDS'S__________________ */
+
+
+
+
+
+/* __________________G A L L E R Y__________________ */
+    /* Advertisement */
+    .adv img {
+        opacity: 0.7;
+        max-width: 100%;
+        height: 30px;
+    }
+    /* image gallery collum */
+    .scroll {
+        /* position: relative; */
+        max-height: 350px;
+        overflow-y: auto;
+    }
+    /* Image effect on galery  */
+    .img-box1 {    margin-top: 1px;    position: relative;    margin-bottom: 20px;    overflow: hidden;}
+    .img-box1 .hover {    width: 100%;    height: 100px;    border: 1px solid transparent;    transition: 1s;}
+    .img-box1:hover .img-box3 {    opacity: 1;    bottom: 10;    transition: 1s;}
+    .img-box1:hover .hover {    transform: scale(1.3);    transition: 1s;}
+    /* .img-box1:hover .img-box2 {    opacity: 1;    top: 0px;    transition: 1s;} */
+    /* .img-box2 {    -border: 1px solid yellow;    position: absolute;    top: -20px; opacity: 0; bottom: 50px; color: red;    padding: 5px;} */
+    /* .img-box2 h3 {    text-align: center;    margin-top: px;    color: #111;} */
+    /* .img-box2 h6 {    text-align: center;    color: darkblue;} */
+    /* Higligiting strip behind button */
+    .img-box3 {
+        position: absolute;
+        /* -border: 1px solid rgb(255, 230, 0); */
+        /* -margin-top: -80px; */
+        padding-top: 5px;
+        width: 100%;
+        height: 60px;
+        opacity: 0;
+        bottom: 1px;
+        /* background-color: rgba(17, 151, 184, 0.068); */
+    }
+    /* button on image */
+    .img-box3 .switch {
+        border: 1px solid transparent;
+        /* padding:10px 20px ; */
+        font-size: 12px;
+        text-align: center;
+        border-radius: 10%;
+        width: 50px;
+        height: 20px;
+        background-color: blue;
+        color:rgb(247, 230, 4);
+    }
+    .switch:hover {
+        background: transparent !important;
+        color: #111 !important;
+        font-weight: bold;
+        border: 3px solid rgb(82, 80, 80) !important;
+    }
+    .modal{
+        margin-top: 60px;
+    }
+    .modal-content{
+        background:linear-gradient(34deg, blue,aqua,grey);        
+    }
+    .card-title  {
+        display: flex;
+    }
+    .btn{
+        padding: 3px;
+        margin: 2px 2px 0px 8px;
+    }
+    .up-form{
+        background-color: teal;
+    }
+    .card-footer{
+        display: flex;
+    }
+    .card-footer #foot-btn {
+        width: 140px;
+        padding: 3px;
+        margin: 3px 3px 0px 8px;
+
+    }
+    .card-title p{
+        color:#1606a3;
+        font-style: italic;
+        margin-left: 450px;
+    }
+/* __________________G A L L E R Y__________________ */
+
